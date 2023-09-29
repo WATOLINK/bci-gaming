@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : Character
 {   
     
-
     public override float[] GetInput() {
         float hInput = Input.GetAxis("Horizontal");
         float vInput = Input.GetAxis("Vertical");
