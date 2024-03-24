@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "827193195672",
+    "project_id": "bci-gaming",
+    "storage_bucket": "bci-gaming.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827193195672:ios:63e6f6281e71c9e711a4ed",
+        "android_client_info": {
+          "package_name": "com.watolink.bci-gaming"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh-YNEADPEpaZB4ic38O1sqHT-iXzuGjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
