@@ -4,29 +4,23 @@ using UnityEngine;
 
 public class Enemy : Character
 {
-    public float attackRange = 1f; 
-    public float attackDamage = 10; 
-    public float attackCooldown = 1f; 
-    public Transform frontCheck; 
-    public LayerMask playerLayer; 
+    public float attackRange = 1f;
+    public float attackDamage = 10;
+    public float attackCooldown = 1f;
+    public Transform frontCheck;
+    public LayerMask playerLayer;
     public int walkTime = 5;
 
-    private bool canAttack = true; 
-    private bool facingRight = true; 
-    private Vector3 startPosition; 
+    private bool canAttack = true;
+    private bool facingRight = true;
+    private Vector3 startPosition;
 
 
     private void Awake()
     {
         playerLayer = LayerMask.GetMask("Player");
         startPosition = transform.position; // Store the initial position
-
     }
-
-    // void Start()
-    // {
-    //     StartCoroutine(AttackCooldown());
-    // }
 
     void Update()
     {
@@ -72,7 +66,6 @@ public class Enemy : Character
         yield return null;
     }
 
-
     void PerformAttack()
     {
         if (canAttack)
@@ -86,22 +79,21 @@ public class Enemy : Character
 
                 if (hitCollider.CompareTag("Player"))
                 {
-                    playerHealth player = hitCollider.GetComponent<playerHealth>();
-                    player.decreaseHealth(attackDamage);
+                    Player player = hitCollider.GetComponent<Player>(); // Reference to the Player class
+                    player.decreaseHealth(attackDamage); // Call decreaseHealth method from Player class
                     Debug.Log("PLAYER HIT");
                     break; // Exit the loop as soon as a player is found
                 }
             }
         }
-
     }
 
     public override float[] GetInput()
     {
         if (facingRight)
-            return new float[] { 1, 0 }; 
+            return new float[] { 1, 0 };
         else
-            return new float[] { -1, 0 }; 
+            return new float[] { -1, 0 };
     }
 
     public bool IsPlayerInAttackRange()
@@ -122,6 +114,5 @@ public class Enemy : Character
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
         startPosition = transform.position; // Update the starting position
-
     }
 }

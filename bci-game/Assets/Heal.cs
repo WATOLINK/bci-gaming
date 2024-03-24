@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class Heal : MonoBehaviour
 {
-    public playerHealth pHealth;
+    public Player player; // Reference to the Player class
     public float heal;
     private GameObject consumeObject;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       if (OnPlayerCollision())
+        if (OnPlayerCollision())
         {
             HealPlayer(consumeObject);
         }
@@ -36,9 +37,9 @@ public class Heal : MonoBehaviour
         return false;
     }
 
-    public void HealPlayer (GameObject consumeObject)
+    public void HealPlayer(GameObject consumeObject)
     {
-        pHealth.health += heal;
+        player.health += heal; // Accessing health directly from the Player class
         Vector3 pos = consumeObject.transform.position;
         Destroy(consumeObject);
     }
