@@ -10,7 +10,7 @@ namespace Entity.Enemies.Bandit
         [SerializeField] private float damageAmount = 10f;
         [SerializeField] private float knockbackForce = 15f;
 
-        private static readonly int Attack = Animator.StringToHash("banditAttack");
+        // private static readonly int Attack = Animator.StringToHash("banditAttack");
         
         private void Awake()
         {
@@ -25,7 +25,8 @@ namespace Entity.Enemies.Bandit
                 IDamageable damageable = other.GetComponent<IDamageable>();
                 if (damageable == null) return;
                 
-                animator.SetTrigger(Attack); // TODO: Fix reversal of animation
+                Debug.Log("AttackRnage");
+                animator.SetTrigger("Attack"); // TODO: Fix reversal of animation
                 
                 Vector2 knockbackDirection = (other.transform.position - transform.position).normalized;
                 knockbackDirection.y += 0.8f;

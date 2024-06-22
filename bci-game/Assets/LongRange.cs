@@ -37,6 +37,7 @@ public class LongRange : Character
         {
             if (hitCollider.CompareTag("Player"))
             {
+                Debug.Log("IsPlayerInAttackRange is true");
                 // Make sure the player is within attack range
                 return true;
             }
