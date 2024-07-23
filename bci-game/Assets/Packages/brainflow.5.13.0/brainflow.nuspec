@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>brainflow</id>
+    <version>5.13.0</version>
+    <authors>Andrey Parfenov</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="ebe6c251b7969f3d9f25b5da4074c72fa02c1b87" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>
