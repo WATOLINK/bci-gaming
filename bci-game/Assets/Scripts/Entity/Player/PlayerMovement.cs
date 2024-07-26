@@ -24,6 +24,8 @@ namespace Entity.Player
         private static readonly int Walking = Animator.StringToHash("IsWalking");
         private static readonly int Jumping = Animator.StringToHash("isJumping");
         private static readonly int Takeoff = Animator.StringToHash("takeoff");
+
+        public bool canJump = true;
         
         private void Start()
         {
@@ -58,8 +60,14 @@ namespace Entity.Player
 
         protected override bool Jump()
         {
+            // Check if current jump is valid
+            if (!canJump || Input.GetAxisRaw("Vertical") == 0) return false;
+
             if (!base.Jump()) // If base jump fails, return false
                 return false;
+            
+            // Set jump state
+            canJump = false;
 
             animator.SetTrigger(Takeoff);
             soundController.PlaySound(jumpSounds, jumpVolume);
@@ -68,6 +76,8 @@ namespace Entity.Player
         }
 
         protected override Vector2 GetMovementInput() {
+            // Check to reset Jump
+            if (!canJump) if (Input.GetAxisRaw("Vertical") == 0 && onGround) canJump = true;
             return new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         }
     }
