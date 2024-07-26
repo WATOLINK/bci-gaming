@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Entity.Utils;
 using UnityEngine;
@@ -9,17 +8,21 @@ namespace Entity.Enemies.BossCactus
     
     public class CactusBossAttackRange : MonoBehaviour
     {
+        private CactusBoss self;
         private Animator animator;
         private CharacterSoundController soundController;
         
         private Rigidbody2D player;
-        private bool playerInRange;
         
-        private bool canFire = true;
+        private bool canAttack = true;
         [SerializeField] private Transform firePoint;
-        [SerializeField] private float suctionForce = 100f;
-        [SerializeField] private float rangeAttackSpeed = 1f;
-        [SerializeField] private float attackRange = 16f;
+        [SerializeField] private float suctionForce = 10f;
+        [SerializeField] private float suctionDuration = 0.8f;
+        [SerializeField] private float suctionCooldown = 1f;
+        
+        [SerializeField] private float visionRange = 16f;
+        [SerializeField] private float visionAngle = 75f;
+        [SerializeField] private int visionRayCount = 5;
         
         [Header("Sounds")]
         [SerializeField] private AudioClip[] rangeAttackSounds;
@@ -36,45 +39,75 @@ namespace Entity.Enemies.BossCactus
 
         private void Start()
         {
+            self = GetComponent<CactusBoss>();
             player = FindFirstObjectByType<Player>().GetComponent<Rigidbody2D>();
         }
 
         private void FixedUpdate()
         {
-            playerInRange = CheckPlayerInRange();
-            if (canFire && playerInRange)
-                Shoot();
-            
-            Debug.Log(playerInRange);
+            if (canAttack && self.IsAlive && CheckPlayerInRange())
+                StartCoroutine(VacuumAttack());
         }
         
         private bool CheckPlayerInRange()
         {
-            RaycastHit2D hit = Physics2D.Raycast(firePoint.position, transform.localScale.x < 0 ? Vector2.left : Vector2.right, attackRange, ~LayerMask.GetMask("Enemies"));
-            // Debug.DrawRay(firePoint.position, transform.localScale.x < 0 ? Vector2.left : Vector2.right, Color.green);
+            Vector2 facing = transform.localScale.x < 0 ? Vector2.left : Vector2.right;
+            int facingSign = transform.localScale.x < 0 ? -1 : 1;
+
+            float playerDistance = Vector2.Distance(transform.position, player.position);
+            Vector2 playerDirection = (player.position - (Vector2) transform.position).normalized;
+            float playerAngle = Vector2.Angle(facing, playerDirection);
             
-            return hit && hit.collider.CompareTag("Player");
+            if (playerAngle > visionAngle / 2 || playerDistance > visionRange) 
+                return false;
+
+            for (int i = 0; i < visionRayCount; i++)
+            {
+                // Start from 0 offset and increment to full offset
+                // Boss only looks at horizontal and up
+                float offsetAngle = facingSign * ((visionAngle / 2) / (visionRayCount - 1)) * i;
+                Vector3 rayDirection = Quaternion.Euler(0, 0, offsetAngle) * facing;
+
+                // Debug.DrawRay(firePoint.position, rayDirection.normalized * visionRange, Color.green, duration: 1);
+                RaycastHit2D hit = Physics2D.Raycast(
+                    firePoint.position,
+                    rayDirection,
+                    visionRange,
+                    ~LayerMask.GetMask("Enemies"));
+                
+
+                // If hit player, return true
+                if (hit && hit.collider.CompareTag("Player"))
+                    return true;
+            }
+
+            return false;
         }
 
-        private void Shoot()
+        private IEnumerator VacuumAttack()
         {
-            canFire = false;
-            
+            canAttack = false;
+            float attackTime = 0f;
+
             animator.SetTrigger(Attack);
-            
-            // shoot after animation finishes playing
             soundController.PlaySound(rangeAttackSounds, rangeAttackVolume);
-            // suck in player
-            Vector3 direction = firePoint.position - player.transform.position;
-            player.AddForce(direction.normalized * suctionForce, ForceMode2D.Impulse);
-            
-            StartCoroutine(AttackCooldown(1f / rangeAttackSpeed));
+            while (attackTime < suctionDuration)
+            {
+                Vector2 direction = (firePoint.position - player.transform.position).normalized;
+                float taper = 1 - (attackTime / suctionDuration);
+                player.AddForce(direction * (suctionForce * taper * Time.fixedDeltaTime), ForceMode2D.Force);
+                
+                attackTime += Time.deltaTime;
+                yield return new WaitForFixedUpdate();
+            }
+
+            StartCoroutine(AttackCooldown(suctionCooldown));
         }
 
         private IEnumerator AttackCooldown(float duration)
         {
             yield return new WaitForSeconds(duration);
-            canFire = true;
+            canAttack = true;
         }
     }
 }

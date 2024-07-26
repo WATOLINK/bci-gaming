@@ -29,7 +29,7 @@ namespace Entity.Enemies.BossCactus
         
         // IDamageable implementation
         public bool IsAlive { get; private set; }
-        public float MaxHealth => 250;
+        public float MaxHealth => 150;
         public float Health { get; private set; }
         
 
@@ -52,6 +52,7 @@ namespace Entity.Enemies.BossCactus
         
         public void Die()
         {
+            
             soundController.PlaySound(deathSound, deathVolume);
             // animator.SetTrigger(IsDead);
             

@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtSounds: []
   hurtVolume: 0.8
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: e3ebb67a59cade443a0f5dbb48c7c2b5, type: 3}
   deathVolume: 0.8
 --- !u!95 &891535362
 Animator:
@@ -1630,11 +1630,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1062388306}
-  suctionForce: 10
-  rangeAttackSpeed: 1
-  attackRange: 16
-  rangeAttackSounds: []
-  rangeAttackVolume: 0.8
+  suctionForce: 4500
+  suctionDuration: 0.8
+  suctionCooldown: 1.5
+  visionRange: 16
+  visionAngle: 45
+  visionRayCount: 5
+  rangeAttackSounds:
+  - {fileID: 8300000, guid: 84d448ba5b1619244a46983fa3483e8d, type: 3}
+  rangeAttackVolume: 0.1
 --- !u!1 &1000025834
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,6 +3107,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 60fa1b05e4ac42d4f8a58b57215ebecd, type: 3}
   footstepVolume: 0.8
   jumpVolume: 0.8
+  canJump: 1
 --- !u!61 &1928844163
 BoxCollider2D:
   m_ObjectHideFlags: 0
