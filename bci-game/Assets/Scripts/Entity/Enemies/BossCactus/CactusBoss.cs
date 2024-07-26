@@ -52,7 +52,6 @@ namespace Entity.Enemies.BossCactus
         
         public void Die()
         {
-            
             soundController.PlaySound(deathSound, deathVolume);
             // animator.SetTrigger(IsDead);
             
