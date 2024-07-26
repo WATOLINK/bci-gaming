@@ -137,7 +137,7 @@ MonoBehaviour:
   impactEffect: {fileID: 3410863941561349306, guid: e46d4e49dbf76344fbe01383a0e86ce0, type: 3}
   projectileSpeed: 15
   projectileDamage: 10
-  projectileKnockbackForce: 0
+  projectileKnockbackForce: 5
   affectedByGravity: 0
   gravityScale: 0.2
   projectileLifetime: 5
