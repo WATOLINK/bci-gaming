@@ -17,7 +17,7 @@ def main ():
     board_id = BoardIds.CROWN_BOARD.value # or BoardIds.NOTION_2_BOARD.value or BoardIds.NOTION_1_BOARD.value
     params = BrainFlowInputParams ()
     params.board_id = board_id
-    params.serial_number = "9bb2e2fad5668286a4b4f407002b4359"
+    params.serial_number = "76dcd666ce9ddeaed072838d28b9c5ac"
     sampling_rate = BoardShim.get_sampling_rate (board_id)
     time_thres =  100
     max_val = -100000000000
@@ -46,7 +46,7 @@ def main ():
             if(np.amax(data[1]) > max_val):
                 max_val = np.amax(data[1])
  
-    blink_thres = 0.5*((max_val - vals_mean)**2) 
+    blink_thres = 0.8*((max_val - vals_mean)**2) 
     ## end
     print("mean value")  
     print(vals_mean)
@@ -70,6 +70,7 @@ def main ():
                 for element in data[1]:
                     if(((element - vals_mean)**2) >= blink_thres):  
                            print("WOOO BLINK DETECTED")
+                           print(((element - vals_mean)**2))
                            break                 
 
     board.stop_stream ()

@@ -7,7 +7,7 @@ import pyautogui
 # import pydirectinput
 import pandas as pd
 import matplotlib.pyplot as plt
-from IPython.display import display, clear_output
+#from IPython.display import display, clear_output
 
 from brainflow import BoardIds
 from brainflow.board_shim import BoardShim, BrainFlowInputParams
@@ -19,7 +19,7 @@ def main ():
     board_id = BoardIds.CROWN_BOARD.value # or BoardIds.NOTION_2_BOARD.value or BoardIds.NOTION_1_BOARD.value
     params = BrainFlowInputParams ()
     params.board_id = board_id
-    params.serial_number = "9bb2e2fad5668286a4b4f407002b4359"
+    params.serial_number = "76dcd666ce9ddCeaed072838d28b9c5ac"
     sampling_rate = BoardShim.get_sampling_rate (board_id)
     time_thres =  100
     max_val = -100000000000

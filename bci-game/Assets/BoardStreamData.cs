@@ -6,9 +6,10 @@ using System.Threading;
 
 using brainflow;
 using brainflow.math;
+/*
 using brainflow.BoardShim;
 using brainflow.DataFilter;
-using brainflow.Enums;
+using brainflow.Enums;*/
 
 public class BoardStreamData : MonoBehaviour
 {
@@ -22,9 +23,58 @@ public class BoardStreamData : MonoBehaviour
 	private double num_samples = 5000;
 	private double samples = 0;
 	private double blink_thresh = 0;
-
+	private float prev_time;
+	private bool calibrated;
 	// Use this for initialization
-	void Start()
+
+	public double get_max(double[,] in_data)
+	{
+		double max = in_data[0, 0];
+
+		for (int i = 0; i < in_data.GetLength(0); i++)
+		{
+			for (int j = 0; j < in_data.GetLength(1); j++)
+			{
+				max = Math.Max(in_data[i, j], max);
+			}
+		}
+
+		return max;
+	}
+
+	//what is getlength(0) vs getlength(1)
+	public double get_avg(double[,] in_data)
+	{
+		double sum = 0;
+		int rows = in_data.GetLength(0);
+		int cols = in_data.GetLength(1);
+
+		for (int i = 0; i < rows; i++)
+		{
+			for (int j = 0; j < cols; j++)
+			{
+				sum += in_data[i, j];
+			}
+		}
+
+		return sum / (rows * cols);
+	}
+
+	double[] GetFirstRow(double[,] in_data)
+	{
+		int columns = in_data.GetLength(1);
+		double[] firstRow = new double[columns];
+
+		for (int j = 0; j < columns; j++)
+		{
+			firstRow[j] = in_data[1, j]; //0 or 1??
+		}
+
+		return firstRow;
+	}
+
+
+	public void StartCalibration()
 	{
 		try
 		{
@@ -39,23 +89,24 @@ public class BoardStreamData : MonoBehaviour
 
 			board_shim.start_stream(450000);
 			Debug.Log("Starting calibration");
-			Thread.Sleep(5000);
-			data = board_shim.get_current_board_data();
+			//thread.Sleep(5000);
+			data = board_shim.get_current_board_data((int) num_samples);
 			Debug.Log("start blinking");
 
 			// modularize this loop code into a method
 			while (samples < num_samples)
 			{
-				data = board_shim.get_current_board_data();
+				data = board_shim.get_current_board_data((int)num_samples);
 				if (data.GetLength(1) > 0)
 				{
-					DataFilter.perform_rolling_filter(data, 2, AggOperations.MEAN);
-					vals_mean += DataFilter.get_avg(data) / num_samples;
+					DataFilter.perform_rolling_filter(data, 1, 2, (int) AggOperations.MEAN);
+					vals_mean += get_avg(data) / num_samples;
 					samples += data.GetLength(1);
-					if (DataFilter.get_max(data) > max_value)
+					if (get_max(data) > max_value)
 					{
-						max_value = DataFilter.get_max(data);
+						max_value = get_max(data);
 					}
+					
 				}
 			}
 
@@ -70,7 +121,8 @@ public class BoardStreamData : MonoBehaviour
 			Debug.Log(blink_thresh);
 
 			Debug.Log("CALIBRATION COMPLETE, START PLAYING");
-
+			prev_time = (int) Mathf.Round(Time.time * 1000);
+			calibrated = true;
 		}
 		catch (BrainFlowError err)
 		{
@@ -81,12 +133,41 @@ public class BoardStreamData : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (board_shim == null)
+		if (board_shim == null || !calibrated)
 		{
 			return;
 		}
 
-		int data_points = (int)sampling_rate * 4;
+		data = board_shim.get_current_board_data((int)num_samples);
+
+		if (data.GetLength(1) > 0)
+        {
+			DataFilter.perform_rolling_filter(data, 1, 2, (int)AggOperations.MEAN);
+
+			foreach (double element in GetFirstRow(data))
+            {
+				Debug.Log("ELEMENT: " + element + " Curr Mean:" + vals_mean);
+            }
+
+			if (((int)Mathf.Round(Time.time * 1000) - time_threshold) > prev_time)
+            {
+				prev_time = (int)Mathf.Round(Time.time * 1000);
+
+				foreach (double element in GetFirstRow(data)) 
+				{
+					if (Math.Pow((element - vals_mean),2) >= blink_thresh)
+					{
+						Debug.Log("WOOO BLINK DETECTED");
+					}
+				}
+
+						
+
+			}
+                
+
+		}
+            
 	}
 
 	private void OnDestroy()
@@ -95,6 +176,7 @@ public class BoardStreamData : MonoBehaviour
 		{
 			try
 			{
+				board_shim.start_stream();
 				board_shim.release_session();
 			}
 			catch (BrainFlowError err)

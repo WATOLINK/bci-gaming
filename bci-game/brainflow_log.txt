@@ -1,0 +1,330 @@
+[2024-07-23 20:52:25.163] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"","serial_port":"","timeout":0}
+[2024-07-23 20:52:25.164] [board_logger] [trace] Board object created -1
+[2024-07-23 20:52:25.164] [board_logger] [trace] File Streamer, file: brainflow_data.csv, mods: w
+[2024-07-23 20:52:25.169] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-23 20:52:25.170] [board_logger] [trace] Board object created 23
+[2024-07-23 20:52:25.170] [board_logger] [debug] Use IP port 9000
+[2024-07-23 20:52:30.170] [board_logger] [error] no data received in 5sec, stopping thread
+[2024-07-23 20:52:30.171] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-23 20:54:20.845] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"","serial_port":"","timeout":0}
+[2024-07-23 20:54:20.845] [board_logger] [trace] Board object created -1
+[2024-07-23 20:54:20.846] [board_logger] [trace] File Streamer, file: brainflow_data.csv, mods: w
+[2024-07-23 20:54:20.849] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-23 20:54:20.849] [board_logger] [trace] Board object created 23
+[2024-07-23 20:54:20.849] [board_logger] [debug] Use IP port 9000
+[2024-07-23 20:54:25.850] [board_logger] [error] no data received in 5sec, stopping thread
+[2024-07-23 20:54:25.850] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-23 20:56:11.362] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-23 20:56:11.362] [board_logger] [trace] Board object created 23
+[2024-07-23 20:56:11.362] [board_logger] [debug] Use IP port 9000
+[2024-07-23 20:56:16.363] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-23 20:56:16.364] [board_logger] [error] no data received in 5sec, stopping thread
+[2024-07-23 20:56:21.364] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-23 20:56:40.978] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-23 20:56:40.978] [board_logger] [trace] Board object created 23
+[2024-07-23 20:56:40.978] [board_logger] [debug] Use IP port 9000
+[2024-07-23 20:56:45.980] [board_logger] [error] no data received in 5sec, stopping thread
+[2024-07-23 20:56:45.980] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-23 20:59:14.846] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-23 20:59:14.846] [board_logger] [trace] Board object created 23
+[2024-07-23 20:59:14.846] [board_logger] [debug] Use IP port 9000
+[2024-07-23 20:59:19.847] [board_logger] [error] no data received in 5sec, stopping thread
+[2024-07-23 20:59:19.847] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-23 21:05:53.396] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-23 21:05:53.396] [board_logger] [trace] Board object created 23
+[2024-07-23 21:05:53.396] [board_logger] [debug] Use IP port 9000
+[2024-07-23 21:05:58.398] [board_logger] [error] no data received in 5sec, stopping thread
+[2024-07-23 21:05:58.398] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-23 21:06:09.778] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-23 21:06:09.779] [board_logger] [trace] Board object created 23
+[2024-07-23 21:06:09.779] [board_logger] [debug] Use IP port 9000
+[2024-07-23 21:06:14.780] [board_logger] [error] no data received in 5sec, stopping thread
+[2024-07-23 21:06:14.780] [board_logger] [error] WSAGetLastError is 10060
+[2024-07-25 20:42:55.908] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"","serial_port":"","timeout":0}
+[2024-07-25 20:42:55.909] [board_logger] [trace] Board object created -1
+[2024-07-25 20:42:55.910] [board_logger] [trace] File Streamer, file: brainflow_data.csv, mods: w
+[2024-07-25 20:43:09.494] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"","serial_port":"","timeout":0}
+[2024-07-25 20:43:09.495] [board_logger] [trace] Board object created -1
+[2024-07-25 20:43:09.495] [board_logger] [trace] File Streamer, file: brainflow_data.csv, mods: w
+[2024-07-25 20:43:38.270] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-25 20:43:38.271] [board_logger] [trace] Board object created 23
+[2024-07-25 20:43:38.271] [board_logger] [debug] Use IP port 9000
+[2024-07-25 20:43:38.415] [board_logger] [info] received first package with 132 bytes streaming is started
+[2024-07-25 20:43:38.415] [board_logger] [debug] start streaming
+[2024-07-25 20:43:38.780] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:39.845] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:40.977] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:41.791] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:42.803] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:43.872] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:44.867] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:46.095] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:47.317] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:48.248] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:49.276] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:50.056] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:51.063] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:52.056] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:53.163] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:54.060] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:56.329] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:57.353] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:57.706] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:43:59.209] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:00.235] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:01.349] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:03.420] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:04.130] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:05.126] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:06.364] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:07.113] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:08.174] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:09.309] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:10.561] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:11.346] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:12.348] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:13.445] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:14.862] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:15.480] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:16.507] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:17.555] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:18.453] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:21.335] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:22.361] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:23.276] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:24.282] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:25.439] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:26.338] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:27.559] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:28.275] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:29.421] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:30.330] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:31.251] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:32.271] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:34.319] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:35.039] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:36.148] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:36.982] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:38.519] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:38.934] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:39.768] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:40.888] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:42.207] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:42.728] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:43.746] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:44.869] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:45.900] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 20:44:46.714] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:16.326] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-25 21:03:16.329] [board_logger] [trace] Board object created 23
+[2024-07-25 21:03:16.329] [board_logger] [debug] Use IP port 9000
+[2024-07-25 21:03:16.409] [board_logger] [info] received first package with 132 bytes streaming is started
+[2024-07-25 21:03:16.409] [board_logger] [debug] start streaming
+[2024-07-25 21:03:16.832] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:18.055] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:18.771] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:19.793] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:21.108] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:22.029] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:23.277] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:24.457] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:25.118] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:26.192] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:27.260] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:28.288] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:29.181] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:30.247] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:31.775] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:32.542] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:33.304] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:34.651] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:35.563] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:36.696] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:37.313] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:38.345] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:39.525] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:40.317] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:41.401] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:42.360] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:43.546] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:44.472] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:45.537] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:46.527] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:47.444] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:48.587] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:50.119] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:52.055] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:52.463] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:53.605] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:54.921] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:55.866] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:56.680] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:57.940] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:03:59.038] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:00.014] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:01.038] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:02.029] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:03.031] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:04.031] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:05.113] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:06.081] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:07.143] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:09.154] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:10.237] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:27.750] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-25 21:04:27.750] [board_logger] [trace] Board object created 23
+[2024-07-25 21:04:27.750] [board_logger] [debug] Use IP port 9000
+[2024-07-25 21:04:27.761] [board_logger] [info] received first package with 132 bytes streaming is started
+[2024-07-25 21:04:27.761] [board_logger] [debug] start streaming
+[2024-07-25 21:04:28.823] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:29.732] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:30.746] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:31.795] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:32.764] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:33.726] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:34.781] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:35.790] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:36.761] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:37.758] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:39.789] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:40.773] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:41.759] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:43.132] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:44.178] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:45.255] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:47.287] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:48.572] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:49.483] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:50.571] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:51.545] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:52.499] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:53.499] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:54.618] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:55.554] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:56.849] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:57.661] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:58.678] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:04:59.666] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:01.258] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:02.175] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:03.532] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:04.651] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:05.417] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:06.466] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:07.417] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:08.436] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:09.476] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:11.630] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:12.402] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:13.320] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:14.585] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:15.370] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:16.430] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:17.352] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:18.315] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:19.370] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:20.306] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:21.322] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:22.304] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:25.847] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:28.069] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:29.042] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:29.932] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:30.917] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:31.915] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:32.909] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:33.904] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:35.012] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:36.004] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:36.991] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:37.986] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:39.464] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:39.991] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:42.388] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:43.052] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:44.273] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:45.240] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:46.188] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:47.558] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:48.485] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:49.225] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:50.321] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:51.783] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:52.477] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:53.416] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:54.530] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:55.655] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:56.466] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:57.370] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:05:59.345] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:00.054] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:01.631] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:02.410] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:03.429] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:04.552] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:05.253] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:07.424] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:08.265] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:09.390] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:10.293] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:13.574] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:15.016] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:15.680] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:16.848] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:17.553] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:18.728] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:19.724] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:20.856] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:21.883] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:22.791] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:24.043] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:24.835] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:25.896] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:27.287] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:27.902] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:29.152] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:30.844] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:35.642] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-25 21:06:35.643] [board_logger] [trace] Board object created 23
+[2024-07-25 21:06:35.643] [board_logger] [debug] Use IP port 9000
+[2024-07-25 21:06:35.685] [board_logger] [info] received first package with 132 bytes streaming is started
+[2024-07-25 21:06:35.685] [board_logger] [debug] start streaming
+[2024-07-25 21:06:35.803] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:36.807] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:38.850] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:39.898] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:40.923] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:41.947] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:43.378] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:44.075] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:45.017] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:50.628] [board_logger] [info] incoming json: {"file":"","file_anc":"","file_aux":"","ip_address":"","ip_address_anc":"","ip_address_aux":"","ip_port":0,"ip_port_anc":0,"ip_port_aux":0,"ip_protocol":0,"mac_address":"","master_board":-100,"other_info":"","serial_number":"76dcd666ce9ddeaed072838d28b9c5ac","serial_port":"","timeout":0}
+[2024-07-25 21:06:50.628] [board_logger] [trace] Board object created 23
+[2024-07-25 21:06:50.628] [board_logger] [debug] Use IP port 9000
+[2024-07-25 21:06:50.838] [board_logger] [info] received first package with 132 bytes streaming is started
+[2024-07-25 21:06:50.838] [board_logger] [debug] start streaming
+[2024-07-25 21:06:51.098] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:51.913] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:53.192] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:54.201] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:54.914] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:55.981] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:57.407] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:06:59.594] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:02.649] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:02.957] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:03.798] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:05.007] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:05.901] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:07.047] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:07.895] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:08.896] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:09.897] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:10.899] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:11.967] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:12.908] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:14.071] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:15.045] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:15.949] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:16.961] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info
+[2024-07-25 21:07:17.949] [board_logger] [trace] Unknown msg: /neurosity/notion/76dcd666ce9ddeaed072838d28b9c5ac/info

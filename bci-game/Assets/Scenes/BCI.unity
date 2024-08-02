@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1274,6 +1274,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1294400581}
+        m_TargetAssemblyTypeName: BoardStreamData, Assembly-CSharp
+        m_MethodName: StartCalibration
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &463401714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1719,7 +1731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263dd4fa12d5448e5b7fafab202763dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NotionTester: {fileID: 957538216}
 --- !u!4 &818166124
 Transform:
   m_ObjectHideFlags: 0
@@ -1794,8 +1805,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: X
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2006,19 +2017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b87455ffa07521648897ba19527597d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _device: {fileID: 11400000, guid: 428702deec7bc474dba80cf59a9e2898, type: 2}
-  _buttonLogin: {fileID: 1507334353}
-  _buttonGetDevices: {fileID: 2004885336}
-  _buttonGetStatus: {fileID: 2004885336}
-  _buttonSubscribeCalm: {fileID: 2004885336}
-  _buttonSubscribeFocus: {fileID: 2004885336}
-  _buttonSubscribeRawBrainwaves: {fileID: 463401713}
-  _buttonSubscribeAccelerometer: {fileID: 2004885336}
-  _buttonSubscribeKinesis: {fileID: 2004885336}
-  _textKinesisProbability: {fileID: 1638172382}
-  StartCalibration: {fileID: 922524220}
-  FinishCalibration: {fileID: 1416724185}
-  Player: {fileID: 1247796760}
 --- !u!4 &957538218
 Transform:
   m_ObjectHideFlags: 0
@@ -2505,8 +2503,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start Calibration
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2530,7 +2528,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.15
+  m_fontSize: 24.05
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2639,8 +2637,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Connect BCI
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2797,7 +2795,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1294400581}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -2906,8 +2904,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '?'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3026,7 +3024,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1294400579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395008b6ad5eb49a3ae24269ffefe5a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0703ba1e987e4427e93401826cdee806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1377330509
@@ -3088,8 +3086,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAY
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3255,8 +3253,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press next to start the calibration routine
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3883,8 +3881,8 @@ MonoBehaviour:
     the sensors make contact with
     your scalp.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4164,8 +4162,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'FIT  YOUR  DEVICE '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4189,7 +4187,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
+  m_fontSize: 21.5
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5450,7 +5448,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2124332500
 Transform:
   m_ObjectHideFlags: 0
@@ -5528,8 +5526,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start Calibration >>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
-  m_sharedMaterial: {fileID: 2453044653339963667, guid: 83669ab2ccbc948819d04d0e90a2eef2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
