@@ -390,7 +390,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 148753810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1332269216}
+        m_TargetAssemblyTypeName: MenuVolumeController, Assembly-CSharp
+        m_MethodName: ToggleMute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &148753810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,7 +692,7 @@ GameObject:
   - component: {fileID: 341982693}
   - component: {fileID: 341982694}
   m_Layer: 5
-  m_Name: VolumeController
+  m_Name: music VolumeController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -753,8 +765,8 @@ RectTransform:
   m_LocalScale: {x: 0.65, y: 0.135, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 341982693}
   - {fileID: 1487584512}
+  - {fileID: 341982693}
   - {fileID: 1874716050}
   - {fileID: 1282162512}
   m_Father: {fileID: 581268744}
@@ -3266,7 +3278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1288441270}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2050244813}
+        m_TargetAssemblyTypeName: MenuVolumeController, Assembly-CSharp
+        m_MethodName: ToggleMute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1288441270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3524,7 +3548,7 @@ GameObject:
   - component: {fileID: 1332269215}
   - component: {fileID: 1332269216}
   m_Layer: 5
-  m_Name: VolumeController
+  m_Name: main VolumeController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4412,7 +4436,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1487584514}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 341982694}
+        m_TargetAssemblyTypeName: MenuVolumeController, Assembly-CSharp
+        m_MethodName: ToggleMute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1487584514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4817,8 +4853,8 @@ RectTransform:
   m_LocalScale: {x: 0.65, y: 0.135, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2050244812}
   - {fileID: 1288441268}
+  - {fileID: 2050244812}
   - {fileID: 958893995}
   - {fileID: 1372370874}
   m_Father: {fileID: 581268744}
@@ -5926,7 +5962,7 @@ GameObject:
   - component: {fileID: 2050244812}
   - component: {fileID: 2050244813}
   m_Layer: 5
-  m_Name: VolumeController
+  m_Name: sfx VolumeController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

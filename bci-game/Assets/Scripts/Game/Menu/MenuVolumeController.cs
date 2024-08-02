@@ -25,7 +25,7 @@ public class MenuVolumeController : MonoBehaviour
     }
 
     // Set the volume for all AudioSources
-    private void SetVolume(float volume)
+    public void SetVolume(float volume)
     {
         foreach (AudioSource audioSource in audioSources)
         {
@@ -37,7 +37,7 @@ public class MenuVolumeController : MonoBehaviour
     }
 
     // Toggle mute state
-    private void ToggleMute()
+    public void ToggleMute()
     {
         isMuted = !isMuted;
         volumeSlider.interactable = !isMuted; // Disable slider if muted
