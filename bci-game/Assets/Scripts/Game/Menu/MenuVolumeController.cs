@@ -7,6 +7,7 @@ public class MenuVolumeController : MonoBehaviour
     [SerializeField] private Slider volumeSlider;    // Reference to the Slider UI element
     [SerializeField] private Button muteButton;      // Reference to the Mute Button UI element
     [SerializeField] private AudioSource[] audioSources;  // References to AudioSource(s) that control the volume
+    [Header("Icons")]
     [SerializeField] private Sprite muteIcon;         // Sprite for mute icon
     [SerializeField] private Sprite unmuteIcon;       // Sprite for unmute icon
 
