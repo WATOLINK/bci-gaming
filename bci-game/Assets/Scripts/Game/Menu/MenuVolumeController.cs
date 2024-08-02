@@ -7,6 +7,9 @@ public class MenuVolumeController : MonoBehaviour
     [SerializeField] private Slider volumeSlider;    // Reference to the Slider UI element
     [SerializeField] private Button muteButton;      // Reference to the Mute Button UI element
     [SerializeField] private AudioSource[] audioSources;  // References to AudioSource(s) that control the volume
+    [SerializeField] private Sprite muteIcon;         // Sprite for mute icon
+    [SerializeField] private Sprite unmuteIcon;       // Sprite for unmute icon
+
 
     private bool isMuted = false; // Tracks the mute state
  
@@ -18,6 +21,7 @@ public class MenuVolumeController : MonoBehaviour
 
         // Set initial volume based on the slider value
         SetVolume(volumeSlider.value);
+        UpdateMuteIcon();
     }
 
     // Set the volume for all AudioSources
@@ -43,6 +47,17 @@ public class MenuVolumeController : MonoBehaviour
             {
                 audioSource.mute = isMuted;
             }
+        }
+        UpdateMuteIcon();
+    }
+
+    // Update mute button icon based on mute state
+    private void UpdateMuteIcon() 
+    {
+        Image buttonImage = muteButton.GetComponent<Image>();
+        if (buttonImage != null)
+        {
+            buttonImage.sprite = isMuted ? muteIcon : unmuteIcon;
         }
     }
 }
