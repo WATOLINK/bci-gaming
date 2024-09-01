@@ -15,7 +15,7 @@ namespace Entity.Projectiles
         [SerializeField] protected float gravityScale = 1f;
         
         [Header("Projectile Life")]
-        [SerializeField] private float projectileLifetime = 5f;
+        [SerializeField] protected float projectileLifetime = 5f;
         [SerializeField] private LayerMask projectileCollisionMask;
 
         private Rigidbody2D body;
@@ -62,7 +62,9 @@ namespace Entity.Projectiles
                 }
 
                 // Impact animation and destroy projectile
-                Instantiate(impactEffect, transform.position, transform.rotation);
+                if (impactEffect != null)
+                    Instantiate(impactEffect, transform.position, transform.rotation);
+                
                 Destroy(gameObject);
             }
         }
