@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028326, g: 0.22571333, b: 0.30692202, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6155,6 +6155,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 60fa1b05e4ac42d4f8a58b57215ebecd, type: 3}
   footstepVolume: 0.8
   jumpVolume: 0.8
+  canJump: 1
 --- !u!61 &1220479992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6567,6 +6568,7 @@ GameObject:
   - component: {fileID: 1275591797}
   - component: {fileID: 1275591796}
   - component: {fileID: 1275591795}
+  - component: {fileID: 1275591804}
   m_Layer: 7
   m_Name: Cowboy (1)
   m_TagString: Untagged
@@ -6892,6 +6894,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &1275591804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275591793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9ac974fad304f428f35f2a1f70c4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  gravity: 8
+  airPenalty: 0.75
+  jumpSpeed: 15
+  jumpDuration: 0.75
+  isAlive: 1
+  movementBlocked: 00000000000000000000000000000000
+  animator: {fileID: 0}
+  attackRange: 1
+  attackDamage: 10
+  attackCooldown: 2
+  frontCheck: {fileID: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  playerTransform: {fileID: 0}
 --- !u!1 &1277484350
 GameObject:
   m_ObjectHideFlags: 0
@@ -9553,7 +9583,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.23, y: 0.4, z: 0}
-  m_LocalScale: {x: 0.7, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1512179955}

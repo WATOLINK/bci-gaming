@@ -1,44 +1,35 @@
-using Entity.Interfaces;
-
 namespace Game.UI
 {
     using UnityEngine;
+    using UnityEngine.UI;
+    using Entity.Enemies.Bandit;
+    using System;
+    using static UnityEngine.RuleTile.TilingRuleOutput;
 
     public class EnemyHealthBar : MonoBehaviour
     {
-        private GameObject healthBarMask;
-        private float healthBarWidth;
+        private GameObject healthFillerMask;
+        private GameObject healthGroup;
 
-        private GameObject enemyObj;
         private float maxHealth;
-        private IDamageable enemyHealth;
+        private Bandit bandit;
 
         private void Start()
         {
-            healthBarMask = transform.GetComponentInChildren<SpriteMask>().gameObject;
-            healthBarWidth = transform.GetComponent<Renderer>().bounds.size.x;
-            
-            enemyObj = transform.parent.gameObject;
-            enemyHealth = enemyObj.GetComponent<IDamageable>();
-            
-            maxHealth = enemyHealth.MaxHealth;
+            healthFillerMask = transform.parent.Find("Mask").gameObject;
+            bandit = transform.parent.parent.gameObject.GetComponent<Bandit>();
+            if(bandit != null) maxHealth = bandit.MaxHealth;
+            healthGroup = transform.parent.gameObject;
         }
 
         private void Update()
         {
-            // Keep health bar facing same direction
-            Vector3 healthBarDirectionScale = transform.localScale;
-            healthBarDirectionScale.x = enemyObj.transform.localScale.x > 0 ? 1.0f : -1.0f;
-            transform.localScale = healthBarDirectionScale;
-
-            // Update health bar percent
-            float healthPercentLost = 1f - enemyHealth.Health / maxHealth;
-
-            Vector3 healthBarPos = transform.position;
-            Vector3 maskPos = healthBarMask.transform.position;
-            maskPos.x = healthBarPos.x - (healthBarWidth * healthPercentLost);
-            healthBarMask.transform.position = maskPos;
-
+            if(bandit != null) 
+            {
+                float healthScaleX = bandit.Health / maxHealth;
+                healthFillerMask.transform.localScale = new Vector3(healthScaleX, 1.0f, 0.0f);
+                healthGroup.transform.localScale = new Vector3(bandit.transform.localScale.x > 0 ? 1.0f : -1.0f, 1.0f, 1.0f);
+            }
         }
     }
 }

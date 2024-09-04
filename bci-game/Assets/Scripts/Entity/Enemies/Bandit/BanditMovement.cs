@@ -43,7 +43,7 @@ namespace Entity.Enemies.Bandit
         {
             // Sample AI, can call an AI utils function instead
             float distanceToPlayer = Mathf.Abs(playerPosition.x - transform.position.x);
-            if (distanceToPlayer is > 0.1f and < 8f)
+            if (distanceToPlayer is > 0.1f and < 11f)
             {
                 return playerPosition.x < transform.position.x ? new Vector2 (-1f, 0f) : new Vector2(1f, 0f);
             }

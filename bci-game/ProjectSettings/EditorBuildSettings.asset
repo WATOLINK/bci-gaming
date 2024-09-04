@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Demos/S24/Cutscenes.unity
     guid: f58574765f5b16d46a19543b0a28700f
   - enabled: 1
+    path: Assets/Scenes/Demos/S24/Demo.unity
+    guid: eeea427854e4afc458fa8a96023200a3
+  - enabled: 1
     path: Assets/Scenes/Demos/S24/VideoDemo.unity
     guid: edfe2153e251a5c439baf314c4eeb1cc
   m_configObjects: {}
