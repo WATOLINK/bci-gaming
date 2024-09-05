@@ -1,13 +1,14 @@
-namespace Entity.Enemies.Bandit
+namespace Entity.Enemies.Cowboy
 {
     using UnityEngine;
     using Entity.Interfaces;
     using Entity.Utils;
     using Game.UI;
+    using System.Collections;
 
-    [RequireComponent(typeof(BanditAttack))]
-    [RequireComponent(typeof(BanditMovement))]
-    public class Bandit : MonoBehaviour, IDamageable
+    [RequireComponent(typeof(CowboyAttack))]
+    [RequireComponent(typeof(CowboyMovement))]
+    public class Cowboy : MonoBehaviour, IDamageable
     {
         private Rigidbody2D body;
         private Animator animator;
@@ -19,8 +20,7 @@ namespace Entity.Enemies.Bandit
         [SerializeField] private AudioClip deathSound;
         [SerializeField, Range(0f, 1f)] private float deathVolume = 0.8f;  
         
-        private static readonly int IsDead = Animator.StringToHash("banditDead");
-        // private static readonly int IsHurt = Animator.StringToHash("Does not exist in Bandit animator controller");
+        private static readonly int IsDead = Animator.StringToHash("CowboyDead");
         
         private void Awake()
         {
@@ -35,7 +35,7 @@ namespace Entity.Enemies.Bandit
         
         // IDamageable implementation
         public bool IsAlive { get; private set; }
-        public float MaxHealth => 100;
+        public float MaxHealth => 50;
         public float Health { get; private set; }
         
 
@@ -43,17 +43,13 @@ namespace Entity.Enemies.Bandit
         {
             if (Health <= 0) return; // Prevents damage after death
             
-            Health -= 50;
+            Health -= 100;
             if (Health <= 0) Die();
             
             soundController.PlaySound(hurtSounds, hurtVolume);
-            // animator.SetTrigger(IsHurt);
-
-            Vector2 knockback = knockbackDirection.normalized * knockbackForce;
-            body.AddForce(knockback, ForceMode2D.Impulse);
         }
 
-        // Stub; Bandits do not heal
+        // Stub; Cowboys do not heal
         public void Heal(float healAmount) {}
         
         public void Die()
@@ -65,9 +61,7 @@ namespace Entity.Enemies.Bandit
                 ? deathSound.length 
                 : 0;
 
-            float deathAnimLen = animator.GetCurrentAnimatorClipInfo(0).Length > 0
-                ? animator.GetCurrentAnimatorClipInfo(0)[0].clip.length
-                : 0;
+            float deathAnimLen = 1f;
 
             IsAlive = false;
             

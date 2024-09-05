@@ -10,7 +10,7 @@ namespace Entity.Projectiles
         [Header("Projectile Stats")]
         [SerializeField] protected float projectileSpeed = 12f;
         [SerializeField] protected float projectileDamage = 5f;
-        [SerializeField] protected float projectileKnockbackForce = 0f;
+        [SerializeField] protected float projectileKnockbackForce = 15f;
         [SerializeField] protected bool affectedByGravity = false;
         [SerializeField] protected float gravityScale = 1f;
         

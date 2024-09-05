@@ -2,18 +2,16 @@ using UnityEngine;
 using Entity.Interfaces;
 using Entity.Utils;
 
-namespace Entity.Enemies.Bandit
+namespace Entity.Enemies.Cowboy
 {
     using Entity.Player;
     
-    public class BanditMovement : CharacterMovementController
+    public class CowboyMovement : CharacterMovementController
     {
-        private Bandit self;
+        private Cowboy self;
         
         private IPositionTrackable playerPositionTracker;
         private Vector2 playerPosition;
-        
-        private static readonly int Facing = Animator.StringToHash("Bandit_X");
         
         private void Reset()
         {
@@ -24,7 +22,7 @@ namespace Entity.Enemies.Bandit
 
         private void Start()
         {
-            self = GetComponent<Bandit>();
+            self = GetComponent<Cowboy>();
             playerPositionTracker = FindFirstObjectByType<Player>();
         }
 
@@ -37,18 +35,6 @@ namespace Entity.Enemies.Bandit
             playerPosition = playerPositionTracker.GetPosition();
 
             // Animations and sound
-        }
-
-        protected override Vector2 GetMovementInput()
-        {
-            // Sample AI, can call an AI utils function instead
-            float distanceToPlayer = Mathf.Abs(playerPosition.x - transform.position.x);
-            if (distanceToPlayer is > 0.1f and < 12f)
-            {
-                return playerPosition.x < transform.position.x ? new Vector2 (-1f, 0f) : new Vector2(1f, 0f);
-            }
-
-            return new Vector2(0.2f, 0f);
         }
     }
 }
