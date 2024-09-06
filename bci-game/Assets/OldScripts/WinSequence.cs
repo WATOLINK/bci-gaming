@@ -19,7 +19,7 @@ public class WinSequence : MonoBehaviour
 
     public void Redo()
     {
-        //implement once game scene is finalized
+        SceneManager.LoadScene("Demo");
         Debug.Log("Replay level");
     }
 

@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -32,7 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Demos/S24/Demo.unity
     guid: eeea427854e4afc458fa8a96023200a3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Demos/S24/VideoDemo.unity
     guid: edfe2153e251a5c439baf314c4eeb1cc
+  - enabled: 1
+    path: Assets/Scenes/Demos/S24/Win.unity
+    guid: 04751fc56d3aef34d9fc1d6668225feb
+  - enabled: 1
+    path: Assets/Scenes/Demos/S24/Menu.unity
+    guid: e09e8d6f3a9627c4390fdd010bbcd9ee
   m_configObjects: {}

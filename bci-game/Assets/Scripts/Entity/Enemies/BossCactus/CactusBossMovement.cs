@@ -15,8 +15,8 @@ namespace Entity.Enemies.BossCactus
         
         private void Reset()
         {
-            maxSpeed = 2f;
-            maxAcceleration = 10f;
+            maxSpeed = 0.3f;
+            maxAcceleration = 2f;
             maxAirAcceleration = 1f;
         }
         

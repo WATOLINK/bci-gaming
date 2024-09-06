@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
         static IEnumerator LoadGame()
         {
             yield return new WaitForSeconds(0.2f); 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("Cutscenes");
         }
     }
 }
