@@ -1,6 +1,7 @@
 using Entity.Interfaces;
 using Entity.Utils;
 using UnityEngine;
+using System.Collections;
 
 namespace Entity.Enemies.BossCactus
 {
@@ -15,12 +16,17 @@ namespace Entity.Enemies.BossCactus
         [SerializeField, Range(0f, 1f)] private float hurtVolume = 0.8f;
         [SerializeField] private AudioClip deathSound;
         [SerializeField, Range(0f, 1f)] private float deathVolume = 0.8f;  
+
+        [SerializeField] private float fadeDuration = 2f;  // How long it takes to fade out when dead
+        [SerializeField] private SpriteRenderer renderer;
+        private bool isFading = false;
         
         private void Awake()
         {
             body = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             soundController = GetComponent<CharacterSoundController>();
+            renderer = GetComponent<SpriteRenderer>();
             
             // Set health to max health on game start
             IsAlive = true;
@@ -53,15 +59,36 @@ namespace Entity.Enemies.BossCactus
         public void Die()
         {
             soundController.PlaySound(deathSound, deathVolume);
-            // animator.SetTrigger(IsDead);
+            if (!isFading)
+            {
+                StartCoroutine(FadeOut());
+            }
             
             float deathSoundLen = deathSound != null 
                 ? deathSound.length 
                 : 0;
-
+            float deathAnimLen = 2f;
             IsAlive = false;
             
-            EntityUtils.MarkForDeath(gameObject, deathSoundLen, true);
+            EntityUtils.MarkForDeath(gameObject, Mathf.Max(deathSoundLen, deathAnimLen), true);
+        }
+
+        private IEnumerator FadeOut()
+        {
+            isFading = true;
+
+            Color spriteColor = renderer.color;
+            float startAlpha = spriteColor.a;
+            float time = 0f;
+            while (time < fadeDuration)
+            {
+                time += Time.deltaTime;
+                float alpha = Mathf.Lerp(startAlpha, 0f, time / fadeDuration);
+                renderer.color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, alpha);
+                yield return null;
+            }
+            renderer.color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, 0f);
+            isFading = false;
         }
     }
 }
