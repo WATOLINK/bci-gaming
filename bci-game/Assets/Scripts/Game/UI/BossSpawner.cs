@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using System.Collections;
 
 public class BossSpawner : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class BossSpawner : MonoBehaviour
     [SerializeField] private Transform player; 
     [SerializeField] private float spawnTriggerX;
     private bool bossSpawned = false;
+    [SerializeField] private GameObject bossfight;
 
     private void Awake()
     {
@@ -19,8 +21,15 @@ public class BossSpawner : MonoBehaviour
     {
         if (!bossSpawned && player.position.x >= spawnTriggerX)
         {
+            StartCoroutine(FightStart(1f));
             ActivateBoss();
         }
+    }
+
+    private IEnumerator FightStart(float duration)
+    {
+        bossfight.GetComponent<Animator>().SetTrigger("Fight");
+        yield return new WaitForSeconds(duration);
     }
 
     // Activates the boss

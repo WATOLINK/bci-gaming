@@ -2,6 +2,7 @@ using Entity.Interfaces;
 using Entity.Utils;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace Entity.Enemies.BossCactus
 {
@@ -20,6 +21,8 @@ namespace Entity.Enemies.BossCactus
         [SerializeField] private float fadeDuration = 2f;  // How long it takes to fade out when dead
         [SerializeField] private SpriteRenderer renderer;
         private bool isFading = false;
+
+        [SerializeField] private GameObject clear;
         
         private void Awake()
         {
@@ -67,7 +70,7 @@ namespace Entity.Enemies.BossCactus
             float deathSoundLen = deathSound != null 
                 ? deathSound.length 
                 : 0;
-            float deathAnimLen = 2f;
+            float deathAnimLen = 3f;
             IsAlive = false;
             
             EntityUtils.MarkForDeath(gameObject, Mathf.Max(deathSoundLen, deathAnimLen), true);
@@ -88,6 +91,9 @@ namespace Entity.Enemies.BossCactus
                 yield return null;
             }
             renderer.color = new Color(spriteColor.r, spriteColor.g, spriteColor.b, 0f);
+
+            clear.GetComponent<Animation>().Play("LevelClear");
+            yield return new WaitForSeconds(1f);
             isFading = false;
         }
     }
