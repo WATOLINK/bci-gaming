@@ -1,6 +1,11 @@
-# bci-gaming
+# Mindfire - BCI Gaming Team
 
-BCI Gaming Team is developing a 2D platformer game that relies on EEG input to control character movement and actions.
+The BCI Gaming Team is developing a Unity 2D platformer game that relies on EEG input to control character movement and actions, creating immersive experiences for people with motor disorders.
+ <br>
+Objective: We aim to use BCI technology for the betterment of people with disabilities and society in general.
+
+# Game Video Demo
+[Demo Link](https://youtu.be/bZJMjM7YEM4)
 
 [Video Demo](https://www.youtube.com/watch?v=bZJMjM7YEM4&ab_channel=GraceXu)
 
